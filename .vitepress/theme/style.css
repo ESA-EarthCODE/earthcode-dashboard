@@ -1,0 +1,31 @@
+/**
+ * Customize default theme styling by overriding CSS variables:
+ * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
+ */
+
+eo-dash a[href="https://eox.at"] img
+{
+  display: unset;
+  height: 9px;
+}
+eo-dash .eodash-overlay p {
+  bottom: -13px !important;
+}
+
+/* Theme adaptations */
+/* Comment out this in order to hide the ESA header bar */
+/* esa-header {
+  display: none;
+}
+esa-navbar {
+  --header-transform: none;
+} */
+esa-cover {
+  --cover-height: auto;
+}
+
+@media (min-width: 640px) {
+    section {
+        padding: 80px 100px;
+    }
+}

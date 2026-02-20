@@ -1,0 +1,19 @@
+{
+  "name": "earthcode-client",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "dependencies": {
+    "@eodash/eodash": "^5.5.2",
+    "@eox/pages-theme-esa": "^0.7.6",
+    "@eox/pages-theme-eox": "^1.1.0",
+    "@eox/storytelling": "^1.10.0",
+    "mustache": "^4.2.0",
+    "vitepress": "^1.6.3"
+  }
+}
