@@ -5,7 +5,7 @@ import baseConfig from "@eox/pages-theme-esa/config";
 export default defineConfig({
   extends: baseConfig,
   srcDir: ".",
-  title: "ESA EarthCODE Dashboard",
+  title: "EarthCODE Dashboard",
   description: "FAIR Science for Earth Action",
   appearance: false, // disable dark mode
   vue: {
@@ -22,14 +22,11 @@ export default defineConfig({
     },
   },
   themeConfig: {
-    logo: "/assets/RACE_Logo.png",
+    logo: "https://brand.esa.int/wp-content/themes/brandcentre/assets/img/ESA_Logo.svg",
+    logo_dark: "https://brand.esa.int/wp-content/themes/brandcentre/assets/img/ESA_Logo.svg",
     nav: [
       { text: "Dashboard", link: "/explore" },
-      { text: "Indicators", link: "/indicators" },
-      { text: "Providers", link: "/providers" },
       { text: "Stories", link: "/stories" },
-      { text: "Partnerships", link: "/partnerships" },
-      { text: "Resources", link: "/resources" },
     ],
     footer: {
       small: true,

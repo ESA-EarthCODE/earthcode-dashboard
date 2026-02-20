@@ -14,5 +14,6 @@ hero:
       text: Discover Stories
       link: /stories
 ---
-
+<section class="light-grey">
 Placeholder
+</section>

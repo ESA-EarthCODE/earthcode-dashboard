@@ -48,7 +48,7 @@ const itemFilterConfig = {
 export default {
   id: "earthcode",
   stacEndpoint:
-    "https://ESA-EarthCODE.github.io/earthcode-catalog/earthcode/catalog.json",
+    "https://ESA-EarthCODE.github.io/earthcode-publishing-catalog/earthcode/catalog.json",
   brand: {
     noLayout: true,
     name: "EarthCODE",
@@ -83,7 +83,6 @@ export default {
         id: Symbol(),
         type: "web-component",
         widget: {
-          // https://uiball.com/ldrs/
           link: "https://cdn.jsdelivr.net/npm/ldrs/dist/auto/mirage.js",
           tagName: "l-mirage",
           properties: {
@@ -105,7 +104,7 @@ export default {
             btns: {
               enableExportMap: true,
               enableCompareIndicators: true,
-              enableSearch: true,
+              enableSearch: false,
               enableBackToPOIs: true,
               enableGlobe: false,
             },
@@ -249,7 +248,7 @@ export default {
                 itemFilterConfig,
               },
               enableBackToPOIs: false,
-              enableSearch: true,
+              enableSearch: false,
               enableGlobe: false,
             },
             btnsPosition: {
