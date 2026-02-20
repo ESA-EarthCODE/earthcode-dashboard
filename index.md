@@ -5,7 +5,7 @@ hero:
   text: "FAIR Science for Earth Action"
   tagline: "Create, find, and collaborate on Earth system science experiments, unlocking the full potential of Earth Observation for the benefit of society - from research to policy"
   background: "https://earthcode.esa.int/img/earthcode-infographic-pillars-Nologo.jpg"  
-  image: "./assets/RACE_KV_2022.jpg"
+  image: "https://earthcode.esa.int/img/earthcode-infographic-pillars.jpg"
   actions:
     - theme: cta
       text: Explore Dashboard
