@@ -20,17 +20,17 @@ jobs:
   deploy-preview:
     env:
       EODASH_OPENCAGE: ${{ secrets.EODASH_OPENCAGE }}
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     permissions:
       contents: write
       pages: write
       pull-requests: write
     steps:
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6
         with:
-          node-version: 20
+          node-version: 24
       - 
-        uses: actions/checkout@v4
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
         with:
           submodules: 'true'
           ref: ${{ github.event.pull_request.head.ref }}
@@ -40,6 +40,6 @@ jobs:
           npm install
           npm run build -- --base /${{ github.event.repository.name }}/pr-preview/pr-${{ github.event.number }}/
       - name: Deploy preview
-        uses: rossjrw/pr-preview-action@v1
+        uses: rossjrw/pr-preview-action@ffa7509e91a3ec8dfc2e5536c4d5c1acdf7a6de9 # v1
         with:
           source-dir: .vitepress/dist/
