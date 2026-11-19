@@ -1,0 +1,1 @@
+import{a as e,o as a}from"./framework.CfSEjcxR.js";var t=["src"],i={__name:"IframeWrapper",props:{src:{type:String,required:!0}},setup(r){return(s,c)=>(a(),e("iframe",{src:r.src,class:"fill-height fill-width"},null,8,t))}};export{i as default};
