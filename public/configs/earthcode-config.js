@@ -47,8 +47,9 @@ const itemFilterConfig = {
 
 export default {
   id: "earthcode",
-  stacEndpoint:
-    "https://ESA-EarthCODE.github.io/earthcode-publishing-catalog/earthcode/catalog.json",
+  stacEndpoint: {
+    endpoint: "https://ESA-EarthCODE.github.io/earthcode-publishing-catalog/earthcode/catalog.json"
+  },
   brand: {
     noLayout: true,
     name: "EarthCODE",

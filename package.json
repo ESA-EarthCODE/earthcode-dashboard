@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@eodash/eodash": "https://pkg.pr.new/eodash/eodash/@eodash/eodash@8b0abfe",
-    "@eox/map": "https://pkg.pr.new/EOX-A/EOxElements/@eox/map@b740722",
     "@eox/pages-theme-esa": "^0.8.2",
     "@eox/pages-theme-eox": "^1.9.0",
     "@eox/esa-ui": "^1.19.1",
@@ -20,6 +19,7 @@
   },
   "overrides": {
     "@eodash/stac": "https://pkg.pr.new/eodash/eodash/@eodash/stac@f7c580f",
-    "@eox/elements-utils": "https://pkg.pr.new/EOX-A/EOxElements/@eox/elements-utils@ade69d0"
+    "@eox/elements-utils": "https://pkg.pr.new/EOX-A/EOxElements/@eox/elements-utils@ade69d0",
+    "@eox/map": "https://pkg.pr.new/EOX-A/EOxElements/@eox/map@b740722"
   }
 }
