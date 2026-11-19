@@ -1,7 +1,7 @@
 {
   "name": "earthcode-client",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "scripts": {
     "start": "npm run dev",
     "dev": "vitepress dev",
@@ -9,12 +9,17 @@
     "preview": "vitepress preview"
   },
   "dependencies": {
-    "@eodash/eodash": "^5.5.2",
-    "@eox/pages-theme-esa": "^0.7.6",
-    "@eox/pages-theme-eox": "^1.1.0",
-    "@eox/esa-ui": "^1.17.0",
-    "@eox/storytelling": "^1.10.0",
+    "@eodash/eodash": "https://pkg.pr.new/eodash/eodash/@eodash/eodash@8b0abfe",
+    "@eox/map": "https://pkg.pr.new/EOX-A/EOxElements/@eox/map@b740722",
+    "@eox/pages-theme-esa": "^0.8.2",
+    "@eox/pages-theme-eox": "^1.9.0",
+    "@eox/esa-ui": "^1.19.1",
+    "@eox/storytelling": "^1.14.0",
     "mustache": "^4.2.0",
     "vitepress": "^1.6.3"
+  },
+  "overrides": {
+    "@eodash/stac": "https://pkg.pr.new/eodash/eodash/@eodash/stac@f7c580f",
+    "@eox/elements-utils": "https://pkg.pr.new/EOX-A/EOxElements/@eox/elements-utils@ade69d0"
   }
 }
