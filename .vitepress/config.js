@@ -26,7 +26,7 @@ export default defineConfig({
     logo_dark: "https://brand.esa.int/wp-content/themes/brandcentre/assets/img/ESA_Logo.svg",
     nav: [
       { text: "Dashboard", link: "/explore" },
-      { text: "Stories", link: "/stories" },
+      // { text: "Stories", link: "/stories" },
     ],
     footer: {
       small: true,

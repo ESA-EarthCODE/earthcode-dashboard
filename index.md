@@ -10,9 +10,9 @@ hero:
     - theme: cta
       text: Explore Dashboard
       link: /explore
-    - theme: alt
-      text: Discover Stories
-      link: /stories
+    # - theme: alt
+    #   text: Discover Stories
+    #   link: /stories
 ---
 <section class="light-grey">
 Placeholder
