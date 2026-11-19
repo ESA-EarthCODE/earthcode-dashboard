@@ -1,1 +1,0 @@
-import{p as t,C as e,S as s,ak as a}from"./framework.CfSEjcxR.js";function r(){const o=e(!1);return t(()=>{window.requestAnimationFrame(()=>{o.value=!0})}),{ssrBootStyles:a(()=>o.value?void 0:{transition:"none !important"}),isBooted:s(o)}}export{r as u};
