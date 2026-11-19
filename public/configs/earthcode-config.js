@@ -21,20 +21,6 @@ const itemFilterConfig = {
       type: "multiselect",
       expanded: isMobile() ? false : true,
     },
-    {
-      key: "tags",
-      title: "Tags",
-      placeholder: "Filter by tags",
-      type: "multiselect",
-      expanded: false,
-    },
-    {
-      key: "providers",
-      title: "Providers",
-      placeholder: "Filter by provider",
-      type: "multiselect",
-      expanded: false,
-    },
   ],
   aggregateResults: "collection_group",
   resultType: "cards",
@@ -127,9 +113,7 @@ export default {
           widget: {
             name: "EodashTools",
             properties: {
-              layoutTarget: "light",
-              layoutIcon:
-                "M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z",
+              showLayoutSwitcher: false,
               itemFilterConfig,
             },
           },
@@ -161,7 +145,7 @@ export default {
               ? {
                   id: Symbol(),
                   title: "Information",
-                  layout: { x: "8/8/9", y: 0, w: "4/4/3", h: 6 },
+                  layout: { x: "9/9/10", y: 0, w: "3/3/2", h: 4 },
                   type: "internal",
                   widget: {
                     name: "EodashStacInfo",
@@ -170,26 +154,26 @@ export default {
               : null;
           },
         },
-        {
-          defineWidget: (selectedSTAC) => {
-            return selectedSTAC
-              ? {
-                  id: Symbol(),
-                  type: "internal",
-                  layout: { x: 4, y: 3, w: 4, h: 9 },
-                  title: "Date",
-                  widget: {
-                    name: "EodashDatePicker",
-                    properties: {
-                      hintText: `<b>Hint:</b> closest available date is displayed <br />
-                            on map (see Analysis Layers)`,
-                      toggleCalendar: true,
-                    },
-                  },
-                }
-              : null;
-          },
-        },
+        // {
+        //   defineWidget: (selectedSTAC) => {
+        //     return selectedSTAC
+        //       ? {
+        //           id: Symbol(),
+        //           type: "internal",
+        //           layout: { x: 4, y: 3, w: 4, h: 9 },
+        //           title: "Date",
+        //           widget: {
+        //             name: "EodashDatePicker",
+        //             properties: {
+        //               hintText: `<b>Hint:</b> closest available date is displayed <br />
+        //                     on map (see Analysis Layers)`,
+        //               toggleCalendar: true,
+        //             },
+        //           },
+        //         }
+        //       : null;
+        //   },
+        // },
         {
           defineWidget: (selectedSTAC) =>
             window.eodashStore.actions.includesProcess(selectedSTAC)
@@ -197,7 +181,7 @@ export default {
                 id: "Processes",
                 type: "internal",
                 title: "Processes",
-                layout: { x: "8/8/9", y: 6, w: "4/4/3", h: 6 },
+                layout: { x: "9/9/10", y: 4, w: "3/3/2", h: 4 },
                 widget: {
                   name: "EodashProcess",
                 },
@@ -323,26 +307,26 @@ export default {
             },
           },
         },
-        {
-          defineWidget: (selectedSTAC) => {
-            return selectedSTAC
-              ? {
-                  id: "Date Picker",
-                  type: "internal",
-                  layout: { x: 4, y: 3, w: 4, h: 9 },
-                  title: "Date",
-                  widget: {
-                    name: "EodashDatePicker",
-                    properties: {
-                      hintText: `<b>Hint:</b> closest available date is displayed <br />
-                                on map (see Analysis Layers)`,
-                      toggleCalendar: true,
-                    },
-                  },
-                }
-              : null;
-          },
-        },
+        // {
+        //   defineWidget: (selectedSTAC) => {
+        //     return selectedSTAC
+        //       ? {
+        //           id: "Date Picker",
+        //           type: "internal",
+        //           layout: { x: 4, y: 3, w: 4, h: 9 },
+        //           title: "Date",
+        //           widget: {
+        //             name: "EodashDatePicker",
+        //             properties: {
+        //               hintText: `<b>Hint:</b> closest available date is displayed <br />
+        //                         on map (see Analysis Layers)`,
+        //               toggleCalendar: true,
+        //             },
+        //           },
+        //         }
+        //       : null;
+        //   },
+        // },
         {
           defineWidget: (selectedSTAC) =>
             window.eodashStore.actions.includesProcess(selectedSTAC) && {

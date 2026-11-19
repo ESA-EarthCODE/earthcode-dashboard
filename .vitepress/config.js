@@ -48,57 +48,6 @@ export default defineConfig({
     }
   },
   head: [
-    // ["link", { rel: "icon", href: "/assets/RACE_KV_2022_favicon.png" }],
-    // // Open Graph / Facebook
-    // ["meta", { property: "og:type", content: "website" }],
-    // [
-    //   "meta",
-    //   {
-    //     property: "og:url",
-    //     content: "https://race.esa.int",
-    //   },
-    // ],
-    // ["meta", { property: "og:title", content: "Rapid Action for Citizens with Earth Observation" }],
-    // [
-    //   "meta",
-    //   {
-    //     property: "og:description",
-    //     content: "This dashboard aims to showcase the power of Earth Observations to inform on societal global challenges. It is a cooperation between The European Space Agency and the European Commission.",
-    //   },
-    // ],
-    // [
-    //   "meta",
-    //   {
-    //     property: "og:image",
-    //     content:
-    //       "https://race.esa.int/assets/RACE_KV_2022.jpg",
-    //   },
-    // ],
-    // // Twitter
-    // ["meta", { property: "twitter:card", content: "https://race.esa.int/assets/RACE_KV_2022_small.jpg" }],
-    // [
-    //   "meta",
-    //   {
-    //     property: "twitter:url",
-    //     content: "https://race.esa.int",
-    //   },
-    // ],
-    // ["meta", { property: "twitter:title", content: "Rapid Action for Citizens with Earth Observation" }],
-    // [
-    //   "meta",
-    //   {
-    //     property: "twitter:description",
-    //     content: "This dashboard aims to showcase the power of Earth Observations to inform on societal global challenges. It is a cooperation between The European Space Agency and the European Commission.",
-    //   },
-    // ],
-    // [
-    //   "meta",
-    //   {
-    //     property: "twitter:image",
-    //     content:
-    //       "https://race.esa.int/assets/RACE_KV_2022.jpg",
-    //   },
-    // ],
     [
       "script",
       {},
