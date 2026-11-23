@@ -25,10 +25,7 @@ const itemFilterConfig = {
   aggregateResults: "collection_group",
   resultType: "cards",
   subTitleProperty: "subtitle",
-  imageProperty: "thumbnail",
-  style: {
-    "--select-filter-max-items": 7,
-  },
+  imageProperty: "thumbnail"
 }
 
 export default {
@@ -97,7 +94,7 @@ export default {
               enableGeolocation: false
             },
             btnsPosition: {
-              x: "12/8/9",
+              x: "12/9/10",
               y: 1,
               gap: 32
             },

@@ -30,7 +30,7 @@ import{m as i}from"./main.c2F9in3F.js";customElements.define("esa-navbar",class 
             <div class="l-container">
                 <div class="c-header">
                     <div class="c-brand">
-                        <a href="/">
+                        <a href="${this.getAttribute("brand-href")||"/"}">
                             <h3 class="c-brand__title" style="display: flex; align-items: center; gap: 1rem">
                                 ${this.getAttribute("brand-logo")?`<img src="${this.getAttribute("brand-logo")}" alt="${this.getAttribute("brand-title")}" style="height: 32px;" />`:""}
                                 ${this.getAttribute("brand-title")}	
