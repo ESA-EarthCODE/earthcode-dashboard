@@ -96,6 +96,7 @@ layout: story
     show-nav
     v-if="storyurl" 
     :markdown-url="storyurl"
+    show-map-loading-indicator
     class="full-width"
     style="transform: translateY(var(--vp-nav-height)); margin-top: calc(var(--vp-nav-height) * -1 - 90px - 48px); margin-bottom: var(--vp-nav-height);"
     @init="initWidgets"

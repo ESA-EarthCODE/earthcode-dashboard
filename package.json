@@ -10,9 +10,9 @@
   },
   "dependencies": {
     "@eodash/eodash": "https://pkg.pr.new/eodash/eodash/@eodash/eodash@8b0abfe",
-    "@eox/pages-theme-esa": "^0.8.2",
+    "@eox/pages-theme-esa": "^0.8.3",
     "@eox/pages-theme-eox": "^1.9.0",
-    "@eox/esa-ui": "^1.19.1",
+    "@eox/esa-ui": "^1.19.2",
     "@eox/storytelling": "^1.14.0",
     "mustache": "^4.2.0",
     "vitepress": "^1.6.3"

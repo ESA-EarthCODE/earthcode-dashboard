@@ -35,4 +35,16 @@ layout: eodash
     const cacheBuster = `?t=${new Date().getTime()}`; // Add a timestamp for cache busting
 </script>
 
-<eo-dash style="display: block; height: calc(100dvh - var(--vp-nav-height))" :config="withBase(`/configs/earthcode-config.js${cacheBuster}`)"/>
+<eo-dash :config="withBase(`/configs/earthcode-config.js${cacheBuster}`)"/>
+
+<style>
+eo-dash {
+  display: block;
+  height: calc(100dvh - var(--vp-nav-height));
+  width: 100%;
+}
+.VPPage:has(eo-dash) {
+  padding: 0;
+  max-width: unset;
+}
+</style>
