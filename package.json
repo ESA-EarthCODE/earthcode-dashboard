@@ -19,8 +19,8 @@
   },
   "overrides": {
     "@eodash/stac": "https://pkg.pr.new/eodash/eodash/@eodash/stac@f7c580f",
-    "@eox/elements-utils": "https://pkg.pr.new/EOX-A/EOxElements/@eox/elements-utils@2e0010d",
-    "@eox/map": "https://pkg.pr.new/EOX-A/EOxElements/@eox/map@2e0010d",
-    "@eox/layercontrol": "https://pkg.pr.new/EOX-A/EOxElements/@eox/layercontrol@2e0010d"
+    "@eox/elements-utils": "https://pkg.pr.new/EOX-A/EOxElements/@eox/elements-utils@6c4faac",
+    "@eox/map": "https://pkg.pr.new/EOX-A/EOxElements/@eox/map@6c4faac",
+    "@eox/layercontrol": "https://pkg.pr.new/EOX-A/EOxElements/@eox/layercontrol@6c4faac"
   }
 }
