@@ -1,9 +1,9 @@
 <script setup>
-import Layout from '@eox/pages-theme-esa/src/Layout.vue';
-import { onMounted } from 'vue';
-import { useData, withBase } from 'vitepress';
+import Layout from "@eox/pages-theme-esa/src/Layout.vue";
+import { onMounted } from "vue";
+import { useData, withBase } from "vitepress";
 
-const {frontmatter, theme, site} = useData();
+const { frontmatter, theme, site } = useData();
 onMounted(() => {
   setTimeout(() => {
     document.body.classList.add("loaded");
@@ -20,10 +20,17 @@ onMounted(() => {
         :brand-title="site.title"
         .menuItems="theme.nav.map((n) => ({ title: n.text, href: withBase(n.link) }))"
         :enable-login="theme.login"
-        style="--header-transform: translateY(0); --header-background: #001923; display: block; height: var(--vp-nav-height);"
+        style="
+          --header-transform: translateY(0);
+          --header-background: #001923;
+          display: block;
+          height: var(--vp-nav-height);
+        "
       ></esa-navbar>
     </ClientOnly>
     <Content></Content>
   </div>
-  <Layout v-else></Layout>
+  <Layout v-else>
+    <template #home-hero-before></template>
+  </Layout>
 </template>

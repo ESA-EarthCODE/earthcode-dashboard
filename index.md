@@ -1,47 +1,44 @@
 ---
 layout: home
-
-hero:
-  text: "FAIR Science for Earth Action"
-  tagline: "Create, find, and collaborate on Earth system science experiments, unlocking the full potential of Earth Observation for the benefit of society - from research to policy"
-  background: "https://earthcode.esa.int/img/earthcode-infographic-pillars-Nologo.jpg"  
-  image: "https://earthcode.esa.int/img/earthcode-infographic-pillars.jpg"
-  actions:
-    - theme: cta
-      text: Explore Dashboard
-      link: /explore
-    # - theme: alt
-    #   text: Discover Stories
-    #   link: /stories
 ---
+
+<script setup>
+const antarcticaCollections = [
+  {
+    Name: "OSC - Antarctic Land-Ice Datacube",
+    Url: "https://osc.earthcode.eox.at/data-collections/antarctic-land/collection",
+  },
+  {
+    Name: "OSC - Antarctic Sea-Ice Datacube",
+    Url: "https://osc.earthcode.eox.at/data-collections/antarctic-sea/collection",
+  },
+];
+
+const oceanCollections = [
+  {
+    Name: "OSC - Mediterranean Sea Datacube",
+    Url: "https://osc.earthcode.eox.at/data-collections/mediterranean-sea/collection",
+  },
+];
+</script>
+
+<section class="blue">
+
+##
+
+</section>
 <section class="light-grey">
 
-## Interactive Datacube Visualizations
+<CollectionCard title="ESA Antarctica Datacube" icon="/assets/polar-science-cluster-logo.png" headerTextColor="#007a87" exploreLink="/explore?indicator=antarctica_cube" :collections="antarcticaCollections">
 
-The Dashboard now hosts interactive web visualizations for the two GeoZarr datacubes, developed as part of the ESA EarthCODE hackathons. These datacubes provide standardized spatial and temporal grids, enabling multi-variable exploration directly in the browser with interactive variable selection, depth slicing, dynamic range adjustments, and time navigation.
+The **ESA Antarctica Datacube** brings together openly available datasets for Antarctica and the Southern Ocean in analysis-ready, cloud-optimized formats that can be accessed and analysed together. The datasets were produced in the frame of ESA Polar Science Cluster activities.
 
-### ESA Mediterranean Sea Datacubes
+</CollectionCard>
 
-The [ESA Mediterranean Sea Datacube](https://esa-earthcode.github.io/ocean_hackathon/datacube/intro/) brings selected marine datasets onto a unified 1/24° latitude/longitude grid (EPSG:4326) across the Mediterranean basin. By aligning physical and biogeochemical observations, variables can be inspected and compared without manual spatial realignment.
+<CollectionCard title="ESA Mediterranean Datacube" icon="/assets/ocean-science-cluster-logo.png" headerTextColor="#003247" exploreLink="/explore?indicator=ocean_cube" :collections="oceanCollections">
 
-Hosted collections:
-- **Daily Surface Fields:** Sea surface salinity, density, sea level anomalies, absolute dynamic topography, and finite-size Lyapunov exponents.
-- **Monthly Fields:** Total and size-fractionated phytoplankton carbon, marine heatwaves, cold spells, and composite hazard indicators.
-- **3D Biophysics:** Daily temperature, salinity, primary production, euphotic depth, mixed layer depth, and geostrophic velocities across 18 depth levels.
-- **Hourly Currents:** Zonal and meridional surface currents, ageostrophic components, and total current velocities.
+The **ESA Ocean Science Cluster** supports research to better understand the ocean's role in interconnected Earth system processes. It addresses major knowledge gaps across physical oceanography, biogeochemistry, ecology, and ocean-atmosphere-land-cryosphere interactions. By combining EO satellite data, in-situ and citizen observations with advanced modelling, the cluster enables truly interdisciplinary ocean science. ESA-funded projects bring together diverse expertise, data , and technologies to generate results created than the sum of their parts. Through strong European and international partnerships under FutureEO, the cluster helps build a robust Ocean research community.
 
-### ESA Antarctica Datacubes
-
-The [ESA Antarctica Datacube](https://esa-earthcode.github.io/polar_hackathon/intro/) integrates Antarctic scientific datasets into analysis-ready Zarr stores, standardizing them onto common polar coordinate systems to eliminate preprocessing overhead like reprojection, resampling, and spatial joins.
-
-Hosted collections:
-- **Land Ice (EPSG:3031):**
-  - **Internal Ice Temperature:** 3D thermal structure modeled across 91 vertical depth levels below the ice sheet surface.
-  - **Surface Elevation Change (SEC):** Rate of elevation change, uncertainties, surface classifications, and IMBIE basin identifiers across 27 observation periods.
-  - **Combined Bed & Ice Sheet:** Bedrock topography, ice thickness, surface elevation, firn air content, geoid height, and grounding line locations.
-  - **Composite Ice Mask:** Multi-temporal Antarctic ice-front composite masks spanning 1997–2021.
-  - **Ice Velocity:** Surface velocity magnitude, directional velocity components (easting, northing, vertical), and measurement counts over 87 time steps.
-- **Sea Ice (EPSG:6932):**
-  - Sea-ice floe density, radar freeboard, sea-ice thickness, snow depth, and proximity to open ocean and leads across 146 observation dates.
+</CollectionCard>
 
 </section>

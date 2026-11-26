@@ -24,8 +24,12 @@ esa-cover {
   --cover-height: auto;
 }
 
+section {
+  padding: 20px;
+}
+
 @media (min-width: 640px) {
-    section {
-        padding: 80px 100px;
-    }
+  section {
+    padding: 20px 40px;
+  }
 }

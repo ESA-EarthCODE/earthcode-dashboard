@@ -142,7 +142,7 @@ export default {
               ? {
                   id: Symbol(),
                   title: "Information",
-                  layout: { x: "9/9/10", y: 0, w: "3/3/2", h: 4 },
+                  layout: { x: "9/9/10", y: 0, w: "3/3/2", h: 12 },
                   type: "internal",
                   widget: {
                     name: "EodashStacInfo",
@@ -171,32 +171,32 @@ export default {
         //       : null;
         //   },
         // },
-        {
-          defineWidget: (selectedSTAC) =>
-            window.eodashStore.actions.includesProcess(selectedSTAC)
-            ? {
-                id: "Processes",
-                type: "internal",
-                title: "Processes",
-                layout: { x: "9/9/10", y: 4, w: "3/3/2", h: 4 },
-                widget: {
-                  name: "EodashProcess",
-                },
-            }
-            : null
-        },
-        {
-          defineWidget: () =>
-            window.eodashStore.actions.shouldShowChartWidget() && {
-              id: "ProcessResultChart",
-              type: "internal",
-              title: "Chart",
-              layout: { x: 0, y: 0, w: 12, h: 8 },
-              widget: {
-                name: "EodashChart",
-              },
-            },
-        },
+        // {
+        //   defineWidget: (selectedSTAC) =>
+        //     window.eodashStore.actions.includesProcess(selectedSTAC)
+        //     ? {
+        //         id: "Processes",
+        //         type: "internal",
+        //         title: "Processes",
+        //         layout: { x: "9/9/10", y: 4, w: "3/3/2", h: 4 },
+        //         widget: {
+        //           name: "EodashProcess",
+        //         },
+        //     }
+        //     : null
+        // },
+        // {
+        //   defineWidget: () =>
+        //     window.eodashStore.actions.shouldShowChartWidget() && {
+        //       id: "ProcessResultChart",
+        //       type: "internal",
+        //       title: "Chart",
+        //       layout: { x: 0, y: 0, w: 12, h: 8 },
+        //       widget: {
+        //         name: "EodashChart",
+        //       },
+        //     },
+        // },
       ],
     },
     compare: {
@@ -324,60 +324,60 @@ export default {
         //       : null;
         //   },
         // },
-        {
-          defineWidget: (selectedSTAC) =>
-            window.eodashStore.actions.includesProcess(selectedSTAC) && {
-              id: "Process",
-              type: "internal",
-              title: "Processes",
-              layout: { x: 0, y: 6, w: "3/3/2", h: 5 },
-              widget: {
-                name: "EodashProcess",
-              },
-            },
-        },
-        {
-          defineWidget: (_, updatedCompareStac) =>
-            window.eodashStore.actions.includesProcess(updatedCompareStac, true) && {
-              id: "CompareMapProcess",
-              type: "internal",
-              title: "Processes",
-              layout: { x: 9, y: 6, w: "3/3/2", h: 5 },
-              widget: {
-                name: "EodashProcess",
-                properties: {
-                  enableCompare: true,
-                },
-              },
-            },
-        },
-                {
-          defineWidget: () =>
-            window.eodashStore.actions.shouldShowChartWidget() && {
-              id: "ProcessResultChart",
-              type: "internal",
-              title: "Chart",
-              layout: { x: 0, y: 0, w: 6, h: 8 },
-              widget: {
-                name: "EodashChart",
-              },
-            },
-        },
-        {
-          defineWidget: () =>
-            window.eodashStore.actions.shouldShowChartWidget(true) && {
-              id: "ProcessResultChartCompare",
-              type: "internal",
-              title: "Compare Chart",
-              layout: { x: 6, y: 0, w: 6, h: 8 },
-              widget: {
-                name: "EodashChart",
-                properties: {
-                  enableCompare: true,
-                },
-              },
-            },
-        },
+        // {
+        //   defineWidget: (selectedSTAC) =>
+        //     window.eodashStore.actions.includesProcess(selectedSTAC) && {
+        //       id: "Process",
+        //       type: "internal",
+        //       title: "Processes",
+        //       layout: { x: 0, y: 6, w: "3/3/2", h: 5 },
+        //       widget: {
+        //         name: "EodashProcess",
+        //       },
+        //     },
+        // },
+        // {
+        //   defineWidget: (_, updatedCompareStac) =>
+        //     window.eodashStore.actions.includesProcess(updatedCompareStac, true) && {
+        //       id: "CompareMapProcess",
+        //       type: "internal",
+        //       title: "Processes",
+        //       layout: { x: 9, y: 6, w: "3/3/2", h: 5 },
+        //       widget: {
+        //         name: "EodashProcess",
+        //         properties: {
+        //           enableCompare: true,
+        //         },
+        //       },
+        //     },
+        // },
+        //         {
+        //   defineWidget: () =>
+        //     window.eodashStore.actions.shouldShowChartWidget() && {
+        //       id: "ProcessResultChart",
+        //       type: "internal",
+        //       title: "Chart",
+        //       layout: { x: 0, y: 0, w: 6, h: 8 },
+        //       widget: {
+        //         name: "EodashChart",
+        //       },
+        //     },
+        // },
+        // {
+        //   defineWidget: () =>
+        //     window.eodashStore.actions.shouldShowChartWidget(true) && {
+        //       id: "ProcessResultChartCompare",
+        //       type: "internal",
+        //       title: "Compare Chart",
+        //       layout: { x: 6, y: 0, w: 6, h: 8 },
+        //       widget: {
+        //         name: "EodashChart",
+        //         properties: {
+        //           enableCompare: true,
+        //         },
+        //       },
+        //     },
+        // },
       ],
     },
   },
