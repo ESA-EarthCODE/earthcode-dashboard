@@ -9,7 +9,7 @@
     "preview": "vitepress preview"
   },
   "dependencies": {
-    "@eodash/eodash": "https://pkg.pr.new/eodash/eodash/@eodash/eodash@8b0abfe",
+    "@eodash/eodash": "https://pkg.pr.new/eodash/eodash/@eodash/eodash@5b778f7",
     "@eox/pages-theme-esa": "^0.8.4",
     "@eox/pages-theme-eox": "^1.9.0",
     "@eox/esa-ui": "^1.19.2",
@@ -18,9 +18,9 @@
     "vitepress": "^1.6.3"
   },
   "overrides": {
-    "@eodash/stac": "https://pkg.pr.new/eodash/eodash/@eodash/stac@f7c580f",
-    "@eox/elements-utils": "https://pkg.pr.new/EOX-A/EOxElements/@eox/elements-utils@6c4faac",
-    "@eox/map": "https://pkg.pr.new/EOX-A/EOxElements/@eox/map@6c4faac",
-    "@eox/layercontrol": "https://pkg.pr.new/EOX-A/EOxElements/@eox/layercontrol@6c4faac"
+    "@eodash/stac": "https://pkg.pr.new/eodash/eodash/@eodash/stac@5b778f7",
+    "@eox/elements-utils": "https://pkg.pr.new/EOX-A/EOxElements/@eox/elements-utils@65e3828",
+    "@eox/map": "https://pkg.pr.new/EOX-A/EOxElements/@eox/map@65e3828",
+    "@eox/layercontrol": "https://pkg.pr.new/EOX-A/EOxElements/@eox/layercontrol@65e3828"
   }
 }
