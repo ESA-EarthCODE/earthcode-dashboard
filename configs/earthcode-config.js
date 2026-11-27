@@ -122,7 +122,7 @@ export default {
                   id: Symbol(),
                   type: "internal",
                   title: "Layers",
-                  layout: { x: 0, y: 1, w: "3/3/2", h: 11 },
+                  layout: { x: 0, y: 1, w: "4/4/3", h: 11 },
                   widget: {
                     name: "EodashLayerControl",
                     properties: {
@@ -279,7 +279,7 @@ export default {
           id: "Layers",
           type: "internal",
           title: "Layers",
-          layout: { x: 0, y: 1, w: "3/3/2", h: 5 },
+          layout: { x: 0, y: 1, w: "3/3/2", h: 11 },
           widget: {
             name: "EodashLayerControl",
             properties: {
@@ -292,7 +292,7 @@ export default {
         {
           id: "Comparison Layers",
           title: "Comparison Layers",
-          layout: { x: "9/9/10", y: 1, w: "3/3/2", h: 5 },
+          layout: { x: "9/9/10", y: 1, w: "3/3/2", h: 11 },
           type: "internal",
           widget: {
             name: "EodashLayerControl",
